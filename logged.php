@@ -158,7 +158,7 @@
          </div>
          <div class="content">
             <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+            <p>Explore and Discover</p>
             <a href="book.php" class="btn">book now</a>
          </div>
       </div>
