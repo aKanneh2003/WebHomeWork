@@ -146,7 +146,7 @@
 
    <div class="content">
       <h3>about us</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et, recusandae nobis fugit modi quibusdam ea assumenda, nulla quisquam repellat rem aliquid sequi maxime sapiente autem ipsum? Nobis, provident voluptate?</p>
+      <p>Discover hidden sites with us!</p>
       <a href="about.php" class="btn">read more</a>
    </div>
 
@@ -168,7 +168,7 @@
          </div>
          <div class="content">
             <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+            <p>Travel the world</p>
             <a href="login.php" class="btn">book now</a>
          </div>
       </div>
@@ -179,7 +179,7 @@
          </div>
          <div class="content">
             <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+            <p>Explore and discover</p>
             <a href="login.php" class="btn">book now</a>
          </div>
       </div>
@@ -208,7 +208,7 @@
 <section class="home-offer">
    <div class="content">
       <h3>upto 50% off</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure tempora assumenda, debitis aliquid nesciunt maiores quas! Magni cumque quaerat saepe!</p>
+      <p>Grab your exclusive discount now!</p>
       <a href="book.php" class="btn">book now</a>
    </div>
 </section>
