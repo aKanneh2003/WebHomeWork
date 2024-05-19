@@ -28,7 +28,8 @@
       <a href="index.php">home</a>
       <a href="about.php">about</a>
       <a href="package.php">package</a>
-      <a href="book.php">book</a>
+      <a href="login.php">book</a>
+      <a href="login.php">login</a>
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
@@ -36,7 +37,18 @@
 </section>
 
 <!-- header section ends -->
-
+<section class="videos">
+   <div class="video-container">
+      <!-- Embed YouTube video -->
+      <iframe width="560" height="315" src="https://www.youtube.com/watch?v=OCzzN8VZgfY" frameborder="0" allowfullscreen></iframe>
+   </div>
+   <div class="video-container">
+      <!-- Local video -->
+      <video controls>
+         <source src="video2.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+      </video>
+   </div>
 <!-- home section starts  -->
 
 <section class="home">
@@ -157,7 +169,7 @@
          <div class="content">
             <h3>adventure & tour</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
-            <a href="book.php" class="btn">book now</a>
+            <a href="login.php" class="btn">book now</a>
          </div>
       </div>
 
@@ -168,7 +180,7 @@
          <div class="content">
             <h3>adventure & tour</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
-            <a href="book.php" class="btn">book now</a>
+            <a href="login.php" class="btn">book now</a>
          </div>
       </div>
       
@@ -179,7 +191,7 @@
          <div class="content">
             <h3>adventure & tour</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
-            <a href="book.php" class="btn">book now</a>
+            <a href="login.php" class="btn">book now</a>
          </div>
       </div>
 
@@ -280,3 +292,29 @@
 
 </body>
 </html>
+
+   
+        
+    
+       
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+  
