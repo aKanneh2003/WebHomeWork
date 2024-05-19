@@ -169,7 +169,7 @@
          </div>
          <div class="content">
             <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+            <p>Explore and discover</p>
             <a href="book.php" class="btn">book now</a>
          </div>
       </div>
@@ -180,7 +180,7 @@
          </div>
          <div class="content">
             <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+            <p>Explore and discover</p>
             <a href="book.php" class="btn">book now</a>
          </div>
       </div>
@@ -198,7 +198,7 @@
 <section class="home-offer">
    <div class="content">
       <h3>upto 50% off</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure tempora assumenda, debitis aliquid nesciunt maiores quas! Magni cumque quaerat saepe!</p>
+      <p>Grab your discount now!</p>
       <a href="book.php" class="btn">book now</a>
    </div>
 </section>
