@@ -60,7 +60,7 @@
          <div class="swiper-slide slide" style="background:url(images/home-slide-1.jpg) no-repeat">
             <div class="content">
                <span>explore, discover, travel</span>
-               <h3>travel arround the world</h3>
+               <h3>travel around the world</h3>
                <a href="package.php" class="btn">discover more</a>
             </div>
          </div>
