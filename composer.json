@@ -1,0 +1,7 @@
+{
+    "name": "travelsite",
+    "require": {
+        "php": "^7.4"
+        
+    }
+}
