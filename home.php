@@ -1,52 +1,30 @@
-<section class="home">
-   <div class="swiper home-slider">
-      <div class="swiper-wrapper">
-         <div class="swiper-slide slide" style="background:url(images/home-slide-1.jpg) no-repeat">
-            <div class="content">
-               <span>explore, discover, travel</span>
-               <h3>travel around the world</h3>
-               <a href="index.php?page=package" class="btn">discover more</a>
-            </div>
-         </div>
-         <div class="swiper-slide slide" style="background:url(images/home-slide-2.jpg) no-repeat">
-            <div class="content">
-               <span>explore, discover, travel</span>
-               <h3>discover the new places</h3>
-               <a href="index.php?page=package" class="btn">discover more</a>
-            </div>
-         </div>
-         <div class="swiper-slide slide" style="background:url(images/home-slide-3.jpg) no-repeat">
-            <div class="content">
-               <span>explore, discover, travel</span>
-               <h3>make your tour worthwhile</h3>
-               <a href="index.php?page=package" class="btn">discover more</a>
-            </div>
-         </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-   </div>
-   <button id="loadDestinations" class="btn">Load Destinations</button>
-   <div id="destinations"></div>
-</section>
+<<h1>Welcome to Visit Salone</h1>
+<p>Explore the beauty and culture of Sierra Leone.</p>
 
+<h2>Video from Our Library</h2>
+<?php
+$video_path = 'Uploads/library.mp4'; // Ensure this is the correct file name and path
+if (file_exists($video_path)) {
+    echo "<video width='320' height='240' controls class='mb-3'>
+            <source src='$video_path' type='video/mp4'>
+            Your browser does not support the video tag.
+          </video>";
+}
+?>
+
+<h2>Video from YouTube</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tXDYtxSslMk" frameborder="0" allowfullscreen class="mb-3"></iframe>
+
+<h2>Our Location</h2>
+<div id="map" style="height: 400px; width: 100%;" class="mb-3"></div>
 <script>
-document.getElementById('loadDestinations').addEventListener('click', function() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'index.php?page=home&action=loadDestinations', true);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            var destinations = JSON.parse(xhr.responseText);
-            var destinationsContainer = document.getElementById('destinations');
-            destinationsContainer.innerHTML = '';
-            destinations.forEach(function(destination) {
-                var div = document.createElement('div');
-                div.className = 'destination';
-                div.innerHTML = '<h3>' + destination.name + '</h3><p>' + destination.description + '</p>';
-                destinationsContainer.appendChild(div);
-            });
-        }
-    };
-    xhr.send();
-});
+    function initMap() {
+        var location = { lat: 8.4844, lng: -13.2344 }; // Coordinates for Freetown, Sierra Leone
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: location
+        });
+        var marker = new google.maps.Marker({ position: location, map: map });
+    }
 </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjhU8uaTPJYrzhP1iHw4u5YLPQGIsUxdY&callback=initMap"></script>
