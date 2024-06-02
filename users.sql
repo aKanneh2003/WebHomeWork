@@ -18,16 +18,12 @@ CREATE TABLE users (
 -- Use the database
 USE user_management;
 
--- Create the bookings table
-CREATE TABLE bookings (
+CREATE TABLE IF NOT EXISTS messages (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    phone VARCHAR(20) NOT NULL,
-    address TEXT NOT NULL,
-    location VARCHAR(255) NOT NULL,
-    guests INT NOT NULL,
-    arrivals DATE NOT NULL,
-    leaving DATE NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    user_id INT NOT NULL,
+    name VARCHAR(50),
+    email VARCHAR(100),
+    message TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
