@@ -1,11 +1,22 @@
 <?php
-return [
-    'site_name' => 'Travel',
-    'menu' => [
-        'home' => 'Home',
-        'about' => 'About Us',
-        'package' => 'Packages',
-        'book' => 'Book',
-        'login' => 'Login'
-    ],
-];
+$menu = array(
+    'home' => 'Home',
+    'about' => 'About',
+    'gallery' => 'Gallery',
+    'contact' => 'Contact',
+    'register' => 'Register',
+    'login' => 'Login',
+    'view_messages' => 'View Messages'
+);
+
+$servername = "localhost";
+$username = "id22187394_allfredahmed";
+$password = "Karzolaa19!";
+$dbname = "id22187394_alfredb";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
