@@ -1,46 +1,43 @@
-<section class="login">
-   <h1 class="heading-title">Register New User</h1>
-   <form id="login-form" action="index.php?page=register&action=process" method="post" class="login-form">
-      <div class="inputBox">
-         <span>first name :</span>
-         <input type="text" placeholder="enter your first name" name="first_name" id="first_name">
-      </div>
-      <div class="inputBox">
-         <span>last name :</span>
-         <input type="text" placeholder="enter your last name" name="last_name" id="last_name">
-      </div>
-      <div class="inputBox">
-         <span>email :</span>
-         <input type="email" placeholder="enter your email" name="email" id="email">
-      </div>
-      <div class="inputBox">
-         <span>password :</span>
-         <input type="password" placeholder="enter your password" name="password" id="password">
-      </div>
-      <input type="submit" value="Register" class="btn" name="register">
-      <div class="error" id="error-message">Please fill out all fields.</div>
-   </form>
-</section>
-
-<!-- swiper js link  -->
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+<h1>Register</h1>
+<form action="process_register.php" method="post" class="needs-validation" novalidate>
+    <div class="form-group">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" class="form-control" required>
+        <div class="invalid-feedback">Please enter your first name.</div>
+    </div>
+    <div class="form-group">
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" class="form-control" required>
+        <div class="invalid-feedback">Please enter your last name.</div>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+        <div class="invalid-feedback">Please enter a valid email.</div>
+    </div>
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" class="form-control" required>
+        <div class="invalid-feedback">Please enter your password.</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
 
 <script>
-document.getElementById('login-form').addEventListener('submit', function(event) {
-    var firstName = document.getElementById('first_name').value;
-    var lastName = document.getElementById('last_name').value;
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    var errorMessage = document.getElementById('error-message');
-
-    if (firstName === '' || lastName === '' || email === '' || password === '') {
-        event.preventDefault();
-        errorMessage.style.display = 'block';
-    } else {
-        errorMessage.style.display = 'none';
-    }
-});
+    // Bootstrap form validation
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            var forms = document.getElementsByClassName('needs-validation');
+            Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
 </script>
